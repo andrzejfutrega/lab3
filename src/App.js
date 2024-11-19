@@ -1,46 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import StudentCard from './components/StudentCard';
-import UseStateEx from './components/UseStateEx';
-import UseReducerEx from './components/UseReducerEx';
-import UseEffectEx from './components/UseEffectEx';
-import { MyContextProvider } from './components/MyContext';
-import UseContextEx from './components/UseContextEx';
-import UseRefEx from './components/UseRefEx';
-function App() {
+import ClickCounter from './components/ClickCounter';
+import ClickCounterInvalid from './components/ClickCounterInvalid';
+import MouseOverHandler from './components/MouseOverHandler';
+import ImageDisplay from './components/ImageDisplay';
+import JsonLoader from './components/JsonLoader';
+import FileUploader from './components/FileUploader';
+import StyleChanger from './components/StyleChanger';
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" width="100px" height="100px"/>
-        
-        <p>
-          Zadanie 1
-        </p>
-        <div className="StudentList">
-          <h1>Student List</h1>
-          <StudentCard name="Jan" lastName="Kowalski" age={21} major="Informatyka" />
-          <StudentCard name="Anna" lastName="Nowak" age={22} major="Matematyka" />
-        </div>
-        <p>
-          Zadanie 2
-        </p>
-        <div className="Zad2">
-                <h1>React Hook Examples</h1>
-                <MyContextProvider>
-                <UseStateEx />
-                <UseReducerEx />
-                <UseEffectEx />
-                <UseContextEx />
-                <UseRefEx />
-                </MyContextProvider>
-            </div>
-            
-      </header>
+      <h1>Interakcje z użytkownikiem</h1>
+      <h2>Poprawna obsługa stanu</h2>
+      <ClickCounter />
+      <h2>Niepoprawna obsługa stanu</h2>
+      <ClickCounterInvalid />
+      <MouseOverHandler />
+      <ImageDisplay />
+      <JsonLoader />
+      <FileUploader />
+      <StyleChanger />
+
+      
       
     </div>
-    
-
   );
-}
+};
 
 export default App;

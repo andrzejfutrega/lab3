@@ -1,0 +1,46 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "Jan Kowalski",
+        "email": "jan.kowalski@example.com",
+        "age": 28,
+        "address": {
+          "street": "Ul. Złota 12",
+          "city": "Warszawa",
+          "postcode": "00-001"
+        },
+        "active": true
+      },
+      {
+        "id": 2,
+        "name": "Anna Nowak",
+        "email": "anna.nowak@example.com",
+        "age": 34,
+        "address": {
+          "street": "Ul. Słoneczna 8",
+          "city": "Kraków",
+          "postcode": "30-001"
+        },
+        "active": false
+      },
+      {
+        "id": 3,
+        "name": "Marek Wiśniewski",
+        "email": "marek.wisniewski@example.com",
+        "age": 41,
+        "address": {
+          "street": "Ul. Pięciomorgowa 45",
+          "city": "Wrocław",
+          "postcode": "50-001"
+        },
+        "active": true
+      }
+    ],
+    "settings": {
+      "theme": "light",
+      "notificationsEnabled": true,
+      "language": "pl"
+    }
+  }
+  
