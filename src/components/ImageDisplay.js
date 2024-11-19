@@ -10,7 +10,7 @@ const ImageDisplay = () => {
   return (
     <div>
       <button onClick={showImage}>Pokaż obrazek</button>
-      {isVisible && <img src="./src/logo.svg" alt="Placeholder"/>}
+      {isVisible && <img src={process.env.PUBLIC_URL + "/image.jpg"} alt="Placeholder"/>}
     </div>
   );
 };
